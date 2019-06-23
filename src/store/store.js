@@ -3,12 +3,9 @@ import Vuex from 'vuex';
 import main from './modules/main';
 import details from './modules/details';
 import shopcart from './modules/shopcart';
+import filter from './modules/filter';
 Vue.use( Vuex );
 
 export const store = new Vuex.Store( {
-  state: {},
-  getters: {},
-  mutations: {},
-  actions: {},
-  modules: { main, details, shopcart },
+  modules: { main, details, shopcart, filter },
 } );

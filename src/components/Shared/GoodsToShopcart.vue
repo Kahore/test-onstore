@@ -12,9 +12,9 @@
       <div class="pull-left quantity mr-1">
         <input
           type="number"
+          v-model= "quantity"
           class="form-control"
           placeholder="Quantity"
-          v-model= "quantity"
           min="1">
       </div>
       <button 
@@ -22,7 +22,7 @@
         value="добавить"
         @click="addToShopcart(item, quantity)">добавить в <i class="fa fa-shopping-cart"/>
       </button>
-     </template>
+    </template>
   </div>
 </template>
 
@@ -42,25 +42,25 @@ import EventBus from '../../EventBus';
       }
     },
     methods:{
-      addToShopcart (item, quantity) {
+      addToShopcart ( item, quantity ) {
         if ( quantity > 0 ) {
           const calcPrice = item.price * quantity;
           let data = Object.assign( {}, item, { quantity:quantity, calculatedPrice: calcPrice} );
-          this.$store.dispatch( 'MUTATE_SHOPCART_ITEM_ADD', data);
+          this.$store.dispatch( 'MUTATE_SHOPCART_ITEM_ADD', data );
           EventBus.$emit ( 'change_quantity' );
         }
       },
-      deleteFromShopcart (itemID) {
+      deleteFromShopcart ( itemID ) {
          this.$store.dispatch( 'MUTATE_SHOPCART_ITEM_DELETE', itemID);
          EventBus.$emit ( 'change_quantity' );
       },
-      isItemInShopcart(item) {
+      isItemInShopcart( item ) {
         const shopcartData = this.$store.getters.GET_SHOPCART;
          let index =  shopcartData.findIndex( function( block ) {
           return block.id === item.id;
         } );
        // let index = this._searchIndex( item.id );
-        if (index === -1 ) {
+        if ( index === -1 ) {
          return false;
         } else {
           return true;
@@ -72,15 +72,15 @@ import EventBus from '../../EventBus';
           return block.id === item.id;
         } );
        // let index = this._searchIndex( item.id );
-        if (index !== -1 ) { 
-          if (quantity < item.quantity) {
+        if ( index !== -1 ) { 
+          if ( quantity < item.quantity ) {
             return false;
           } else {
             return true;
           }
         }
       },
-      _searchIndex (itemID) {
+      _searchIndex ( itemID ) {
         let shopcartData = this.$store.getters.GET_SHOPCART;
         shopcartData.findIndex( function( block ) {
           return block.id === itemID;

@@ -1,13 +1,18 @@
 <template>
   <div class="container mt-2">
     <div class="row">
-      <div class="row col-md-9">
+      <div class="col-lg-2">
+          <GoodsFilter :FilterType='"LOAD_GOODS"'/>
+          <div class="alert alert-danger" role="alert">
+            Данные только во vuex...
+          </div>
+      </div>
+      <div class="row col-md-7">
         <div 
           v-for="item in shopcartList"
           :key="item.id"
           class="row bg-light p-2 mb-3 col-md-12">
             <div class="col-md-4 col-lg-3">
-              <input type="checkbox" name="" id=""><br>
               <img 
                 :src="item.thumbnailUrl"
                 alt="goods image">
@@ -19,7 +24,7 @@
                   class="fa fa-rub"
                   aria-hidden="true"/>
               </p>
-              <p v-text="item.description"/>
+
             </div>
             <div class="col-md-1 col-lg-1">
               <button class="btn" @click="deleteFromShopcart(item.id)">
@@ -65,8 +70,12 @@
 
 <script>
 import EventBus from '../EventBus'
+import GoodsFilter from './Shared/GoodsFilter';
 export default {
   name: 'Shopcart',
+  components: {
+    GoodsFilter
+  },
   computed: {
     shopcartList () {
       return this.$store.getters.GET_SHOPCART;

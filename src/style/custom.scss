@@ -3,6 +3,7 @@ $error-color: #ff8181;
   &-card {
     width: 18rem;
     cursor: pointer;
+    display: inline-block;
     &_link {
       text-decoration: none;
       &:hover {

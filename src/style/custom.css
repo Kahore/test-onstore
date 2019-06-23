@@ -1,6 +1,7 @@
 .goods-card {
   width: 18rem;
   cursor: pointer;
+  display: inline-block;
 }
 
 .goods-card_link {

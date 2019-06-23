@@ -17,12 +17,13 @@ const mutations = {
 };
 
 const actions = {
-  LOAD_GOODS( { commit } ) {
+  LOAD_GOODS( { commit }, payload ) {
     // const result = doAjax.doAjax( 'http://my-json-server.typicode.com/Kahore/test-onstore/goods' );
     // axios.get( 'http://my-json-server.typicode.com/Kahore/test-onstore/goods' ).then( response => {
     //   commit( 'LOAD_GOODS', response.data );
     // } );
-    axios.get( 'http://localhost:3000/goods' ).then( response => {
+    
+    axios.get( 'http://localhost:3000/goods', { params: payload } ).then( response => {
       commit( 'LOAD_GOODS', response.data );
     } );
   },
