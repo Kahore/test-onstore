@@ -27,6 +27,7 @@
 </template>
 
 <script>
+import EventBus from '../../EventBus';
   export default {
     props: {
       item: {
@@ -46,10 +47,12 @@
           const calcPrice = item.price * quantity;
           let data = Object.assign( {}, item, { quantity:quantity, calculatedPrice: calcPrice} );
           this.$store.dispatch( 'MUTATE_SHOPCART_ITEM_ADD', data);
+          EventBus.$emit ( 'change_quantity' );
         }
       },
       deleteFromShopcart (itemID) {
          this.$store.dispatch( 'MUTATE_SHOPCART_ITEM_DELETE', itemID);
+         EventBus.$emit ( 'change_quantity' );
       },
       isItemInShopcart(item) {
         const shopcartData = this.$store.getters.GET_SHOPCART;
