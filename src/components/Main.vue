@@ -8,44 +8,26 @@
         <div 
           class="card m-1"
         >
-          <img 
-            :src="item.thumbnailUrl"
-            class="card-img-top"
-            alt="goods image">
-          <div class="card-body">
-            <p class="card-subtitle">{{ calcPrice( item.price, 4 ) }}
-              <i
-                class="fa fa-rub"
-                aria-hidden="true"/>
-            </p>
-            <p
-              class="card-text goods-card_desc"
-            >{{ item.title }} / {{ item.category }}</p>
-            <div class="input-group">
-              <span class="input-group-btn">
-                <button 
-                  type="button"
-                  class="btn btn-default">
-                  <span class="fa fa-minus"/>
-                </button>
-              </span>
-              <input 
-                type="text"
-                class="form-control input-number"
-                value="1"
-                min="1">
-              <span class="input-group-btn">
-                <button
-                  type="button"
-                  class="btn btn-default">
-                  <span class="fa fa-plus"/>
-                </button>
-              </span>
-              <button 
-                value="добавить"
-                class="btn btn-info">добавить в <i class="fa fa-shopping-cart"/></button>
+          <router-link
+            :to="{path:'GoodsDetails/'+item.id}"
+            class="goods-card_link"
+          >
+            <img 
+              :src="item.thumbnailUrl"
+              class="card-img-top"
+              alt="goods image">
+            <div class="card-body">
+              <p class="card-subtitle goods-card_price">{{ calcPrice( item.price, 4 ) }}
+                <i
+                  class="fa fa-rub"
+                  aria-hidden="true"/>
+              </p>
+              <p
+                class="card-text goods-card_desc"
+              >{{ item.title }} / {{ item.category }}</p>
+              <GoodsToShopcart/>
             </div>
-          </div>
+          </router-link>
         </div>
       </div>
     </div>
@@ -55,8 +37,12 @@
 </template>
 
 <script>
+import GoodsToShopcart from './Shared/GoodsToShopcart';
 export default {
   name: 'Main',
+  components: {
+    GoodsToShopcart
+  },
   computed: {
     goods () {
       return this.$store.getters.GET_GOODS;

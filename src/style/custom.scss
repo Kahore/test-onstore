@@ -3,10 +3,23 @@ $error-color: #ff8181;
   &-card {
     width: 18rem;
     cursor: pointer;
+    &_link {
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
     &_desc {
       max-height: 3.2rem;
       min-height: 3.2rem;
       overflow: hidden;
+      color: gray;
+      &:hover {
+        color: lighten($color: gray, $amount: 10)
+      }
+    }
+    &_price {
+      color: #ff8181
     }
   }
 }

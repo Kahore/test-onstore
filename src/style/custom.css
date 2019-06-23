@@ -3,9 +3,26 @@
   cursor: pointer;
 }
 
+.goods-card_link {
+  text-decoration: none;
+}
+
+.goods-card_link:hover {
+  text-decoration: none;
+}
+
 .goods-card_desc {
   max-height: 3.2rem;
   min-height: 3.2rem;
   overflow: hidden;
+  color: gray;
+}
+
+.goods-card_desc:hover {
+  color: #9a9a9a;
+}
+
+.goods-card_price {
+  color: #ff8181;
 }
 /*# sourceMappingURL=custom.css.map */
