@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=custom.css.map */
+.goods-card {
+  width: 18rem;
+  cursor: pointer;
+}
+
+.goods-card_desc {
+  max-height: 3.2rem;
+  min-height: 3.2rem;
+  overflow: hidden;
+}
+/*# sourceMappingURL=custom.css.map */

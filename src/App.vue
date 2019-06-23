@@ -6,11 +6,13 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
 };
 </script>
 
 <style>
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap/dist/css/bootstrap.css';
 @import '/style/custom.css';
+@import '/style/font-awesome/css/font-awesome.min.css';
+
 </style>

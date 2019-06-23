@@ -1,1 +1,12 @@
 $error-color: #ff8181;
+.goods {
+  &-card {
+    width: 18rem;
+    cursor: pointer;
+    &_desc {
+      max-height: 3.2rem;
+      min-height: 3.2rem;
+      overflow: hidden;
+    }
+  }
+}
