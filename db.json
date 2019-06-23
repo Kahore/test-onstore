@@ -225,5 +225,6 @@
       "url": "https://via.placeholder.com/600/5e3a73",
       "thumbnailUrl": "https://via.placeholder.com/150/5e3a73"
     }
-  ]
+  ],
+  "category": [{ "A": "A" }, { "B": "B" }, { "C": "C" }]
 }
