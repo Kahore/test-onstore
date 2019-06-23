@@ -62,8 +62,8 @@ export default {
     }
   },
   methods: {
-    deleteFromShopcart(itemID) {
-       this.$store.dispatch( 'MUTATE_SHOPCART_ITEM_DELETE', itemID);
+    deleteFromShopcart( itemID ) {
+       this.$store.dispatch( 'MUTATE_SHOPCART_ITEM_DELETE', itemID );
     }
   }
 };

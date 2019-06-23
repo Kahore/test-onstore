@@ -1,24 +1,12 @@
 <template>
   <div class="input-group">
-    <span class="input-group-btn">
-      <button 
-        type="button"
-        class="btn btn-default">
-        <span class="fa fa-minus"/>
-      </button>
-    </span>
-    <input 
-      type="text"
-      class="form-control input-number"
-      value="1"
+  <div class="pull-left quantity mr-1">
+    <input
+      type="number"
+      class="form-control"
+      placeholder="Quantity"
       min="1">
-    <span class="input-group-btn">
-      <button
-        type="button"
-        class="btn btn-default">
-        <span class="fa fa-plus"/>
-      </button>
-    </span>
+  </div>
     <template v-if="isItemInShopcart(item)">
       <button 
         value="добавить"
