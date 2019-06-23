@@ -4,7 +4,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-2">
-          <GoodsFilter :FilterType='"LOAD_GOODS"'/>
+          <!-- eslint-disable-next-line -->
+          <GoodsFilter :filter-type='"LOAD_GOODS"'/>
         </div>
         <div class="col-lg-10">
           <div 
@@ -23,7 +24,7 @@
                   class="card-img-top"
                   alt="goods image">
                 <div class="card-body">
-                  <GoodsPrice :itemPrice="item.price"/>
+                  <GoodsPrice :item-price="item.price"/>
                   <p
                     class="card-text goods-card_desc"
                   >{{ item.title }} / {{ item.category }}</p>
@@ -39,7 +40,7 @@
       <!-- .row -->
     </div>
     <!-- .container -->
-</section>
+  </section>
 </template>
 
 <script>

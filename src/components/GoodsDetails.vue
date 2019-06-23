@@ -11,7 +11,7 @@
         <h3>{{ item.title }}</h3>
         <br>
         <h3>
-          <GoodsPrice :itemPrice="item.price"/>
+          <GoodsPrice :item-price="item.price"/>
         </h3>
         <br>
         <div class="row">

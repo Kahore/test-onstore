@@ -1,3 +1,7 @@
+input:invalid {
+  border-left: 2px solid #ff8181;
+}
+
 .goods-card {
   width: 18rem;
   cursor: pointer;

@@ -11,8 +11,8 @@
     <template v-else>
       <div class="pull-left quantity mr-1">
         <input
-          type="number"
           v-model= "quantity"
+          type="number"
           class="form-control"
           placeholder="Quantity"
           min="1">
@@ -29,17 +29,17 @@
 <script>
 import EventBus from '../../EventBus';
   export default {
+    name:'GoodsToShopcart',
     props: {
       item: {
         type: Object,
-        default: {}
+        default: () => {}
       }
     },
-    name:'GoodsToShopcart',
     data() {
       return {
         quantity: 1
-      }
+      };
     },
     methods:{
       addToShopcart ( item, quantity ) {
@@ -51,7 +51,7 @@ import EventBus from '../../EventBus';
         }
       },
       deleteFromShopcart ( itemID ) {
-         this.$store.dispatch( 'MUTATE_SHOPCART_ITEM_DELETE', itemID);
+         this.$store.dispatch( 'MUTATE_SHOPCART_ITEM_DELETE', itemID );
          EventBus.$emit ( 'change_quantity' );
       },
       isItemInShopcart( item ) {

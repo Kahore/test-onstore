@@ -57,7 +57,7 @@ import EventBus from '../../EventBus';
     data () {
       return {
         totalCost: 0
-      }
+      };
     },
     computed:{
       QuantityInShopcart () {
@@ -76,7 +76,7 @@ import EventBus from '../../EventBus';
       TotalCost() {
         let shopcartData = this.$store.getters.GET_SHOPCART;
         let _totalCost = 0;
-        for (let index = 0; index < shopcartData.length; index++) {
+        for ( let index = 0; index < shopcartData.length; index++ ) {
           _totalCost = _totalCost + shopcartData[index].calculatedPrice;
         }
         this.totalCost = _totalCost;

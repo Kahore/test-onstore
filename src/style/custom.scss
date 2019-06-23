@@ -1,4 +1,7 @@
 $error-color: #ff8181;
+input:invalid { 
+  border-left: 2px solid $error-color; 
+}
 .goods {
   &-card {
     width: 18rem;
