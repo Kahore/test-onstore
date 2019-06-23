@@ -36,7 +36,9 @@
         <li class="nav-item">
           <router-link 
             class="nav-link"
-            to="/Shopcart">Корзина
+            to="/Shopcart">
+            Корзина ({{ QuantityInShopcart }})
+            <i class="fa fa-shopping-cart"/>
           </router-link>
         </li>
       </ul>
@@ -46,6 +48,11 @@
 
 <script>
   export default {
-    name: 'PageHeader'
+    name: 'PageHeader',
+    computed:{
+      QuantityInShopcart () {
+        return this.$store.getters.GET_SHOPCART_QUANTITY;
+      }
+    }
   };
 </script>

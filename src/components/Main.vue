@@ -16,7 +16,7 @@
               :src="item.thumbnailUrl"
               class="card-img-top"
               alt="goods image">
-            <div class="card-body">
+            <div class="card-body card-">
               <p class="card-subtitle goods-card_price">{{ calcPrice( item.price, 4 ) }}
                 <i
                   class="fa fa-rub"
@@ -25,9 +25,11 @@
               <p
                 class="card-text goods-card_desc"
               >{{ item.title }} / {{ item.category }}</p>
-              <GoodsToShopcart/>
             </div>
           </router-link>
+          <div class="card-footer">
+            <GoodsToShopcart :item="item"/>
+          </div>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import main from './modules/main';
 import details from './modules/details';
+import shopcart from './modules/shopcart';
 Vue.use( Vuex );
 
 export const store = new Vuex.Store( {
@@ -9,5 +10,5 @@ export const store = new Vuex.Store( {
   getters: {},
   mutations: {},
   actions: {},
-  modules: { main, details },
+  modules: { main, details, shopcart },
 } );

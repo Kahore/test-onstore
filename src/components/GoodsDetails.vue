@@ -18,7 +18,7 @@
         <br>
         <div class="row">
           <div class="col-lg-8 col-md-5 col-sm-6 col-7">
-            <GoodsToShopcart/>
+            <GoodsToShopcart :item="item"/>
           </div>
         </div>
         <!-- .row -->
