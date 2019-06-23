@@ -10,10 +10,8 @@
       <div class="col-lg-5 col-md-12 col-sm-12 col-12">
         <h3>{{ item.title }}</h3>
         <br>
-        <h3 class="goods-card_price">{{ item.price }}
-          <i
-            class="fa fa-rub"
-            aria-hidden="true"/>
+        <h3>
+          <GoodsPrice :itemPrice="item.price"/>
         </h3>
         <br>
         <div class="row">
@@ -39,10 +37,12 @@
 
 <script>
 import GoodsToShopcart from './Shared/GoodsToShopcart';
+import GoodsPrice from './Shared/GoodsPrice';
 export default {
   name: 'GoodsDetails',
   components: {
-      GoodsToShopcart
+      GoodsToShopcart,
+      GoodsPrice
   },
   computed: {
     item () {

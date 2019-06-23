@@ -15,7 +15,7 @@
             <div class="col-md-6 col-lg-8">
               <h5 v-text="item.title"/>
               <p class="goods-card_price">
-                {{ item.calculatedPrice }}  <i
+                {{ item.price }}  <i
                   class="fa fa-rub"
                   aria-hidden="true"/>
               </p>

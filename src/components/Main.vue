@@ -16,12 +16,8 @@
               :src="item.thumbnailUrl"
               class="card-img-top"
               alt="goods image">
-            <div class="card-body card-">
-              <p class="card-subtitle goods-card_price">{{ calcPrice( item.price, 4 ) }}
-                <i
-                  class="fa fa-rub"
-                  aria-hidden="true"/>
-              </p>
+            <div class="card-body">
+              <GoodsPrice :itemPrice="item.price"/>
               <p
                 class="card-text goods-card_desc"
               >{{ item.title }} / {{ item.category }}</p>
@@ -40,10 +36,12 @@
 
 <script>
 import GoodsToShopcart from './Shared/GoodsToShopcart';
+import GoodsPrice from './Shared/GoodsPrice';
 export default {
   name: 'Main',
   components: {
-    GoodsToShopcart
+    GoodsToShopcart,
+    GoodsPrice
   },
   computed: {
     goods () {
@@ -53,10 +51,6 @@ export default {
   created () {
     this.$store.dispatch( 'LOAD_GOODS' );
   },
-  methods: {
-    calcPrice ( price, quantity ) {
-      return price * quantity;
-    }
-  }
+
 };
 </script>

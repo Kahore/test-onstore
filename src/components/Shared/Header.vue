@@ -37,8 +37,12 @@
           <router-link 
             class="nav-link"
             to="/Shopcart">
-            Корзина ({{ QuantityInShopcart }})
             <i class="fa fa-shopping-cart"/>
+            Корзина ({{ QuantityInShopcart }})
+            на сумму {{ TotalCost }}
+            <i
+              class="fa fa-rub"
+              aria-hidden="true"/>
           </router-link>
         </li>
       </ul>
@@ -52,6 +56,14 @@
     computed:{
       QuantityInShopcart () {
         return this.$store.getters.GET_SHOPCART_QUANTITY;
+      },
+      TotalCost () {
+        let shopcartData = this.$store.getters.GET_SHOPCART;
+        let totalCost = 0;
+        for (let index = 0; index < shopcartData.length; index++) {
+          totalCost = totalCost + shopcartData[index].calculatedPrice;
+        }
+        return totalCost
       }
     }
   };
