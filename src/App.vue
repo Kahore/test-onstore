@@ -1,12 +1,17 @@
 <template>
   <div id="app">
+    <pageHeader/>
     <router-view/>
   </div>
 </template>
 
 <script>
+import pageHeader from '../src/components/Shared/Header';
 export default {
   name: 'App',
+  components: {
+    pageHeader
+  }
 };
 </script>
 
