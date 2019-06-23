@@ -4,12 +4,16 @@
       "id": 1,
       "category": "A",
       "title": "accusamus beatae ad facilis cum similique qui sunt",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem magnam, reprehenderit dolorem error ullam illum maiores dolorum! Dolorem hic iusto veniam, impedit soluta magni esse praesentium. Accusantium minima reprehenderit illo?",
+      "price": 1000,
       "url": "https://via.placeholder.com/600/92c952",
       "thumbnailUrl": "https://via.placeholder.com/150/92c952"
     },
     {
       "id": 2,
       "category": "B",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores magnam ut praesentium cupiditate, ratione, voluptates facere corrupti earum iure est sed. Sunt voluptatum autem dolores rerum molestias voluptatibus aspernatur omnis.",
+      "price": 1010,
       "title": "reprehenderit est deserunt velit ipsam",
       "url": "https://via.placeholder.com/600/771796",
       "thumbnailUrl": "https://via.placeholder.com/150/771796"
@@ -17,6 +21,8 @@
     {
       "id": 3,
       "category": "C",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque quis suscipit quod omnis officiis aspernatur labore, ut, veniam non perferendis blanditiis, nisi inventore eaque sequi quas tenetur esse? Voluptatem?",
+      "price": 1010,
       "title": "officia porro iure quia iusto qui ipsa ut modi",
       "url": "https://via.placeholder.com/600/24f355",
       "thumbnailUrl": "https://via.placeholder.com/150/24f355"
@@ -24,6 +30,8 @@
     {
       "id": 4,
       "category": "A",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, beatae commodi, tenetur dolore eligendi incidunt dolores praesentium quas repellendus similique officiis fuga? Recusandae aliquid molestias id veniam eaque quas quia?",
+      "price": 1000,
       "title": "culpa odio esse rerum omnis laboriosam voluptate repudiandae",
       "url": "https://via.placeholder.com/600/d32776",
       "thumbnailUrl": "https://via.placeholder.com/150/d32776"
@@ -31,6 +39,8 @@
     {
       "id": 5,
       "category": "B",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illum nesciunt quos corrupti recusandae repellendus eos earum labore asperiores vero! Non placeat accusamus sit inventore, nobis dolorum quam saepe ea.",
+      "price": 2010,
       "title": "natus nisi omnis corporis facere molestiae rerum in",
       "url": "https://via.placeholder.com/600/f66b97",
       "thumbnailUrl": "https://via.placeholder.com/150/f66b97"
@@ -38,6 +48,8 @@
     {
       "id": 6,
       "category": "C",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut excepturi obcaecati ducimus qui incidunt cumque officia, deserunt earum, commodi beatae tenetur minus alias magnam autem, quasi sit dolorum quibusdam. Officia.",
+      "price": 1210,
       "title": "accusamus ea aliquid et amet sequi nemo",
       "url": "https://via.placeholder.com/600/56a8c2",
       "thumbnailUrl": "https://via.placeholder.com/150/56a8c2"
@@ -45,6 +57,8 @@
     {
       "id": 7,
       "category": "A",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et atque praesentium id velit laudantium exercitationem fuga, consequatur soluta quidem harum voluptatem nemo veniam? Similique, voluptatibus! Velit aliquid facilis architecto tenetur.",
+      "price": 3010,
       "title": "officia delectus consequatur vero aut veniam explicabo molestias",
       "url": "https://via.placeholder.com/600/b0f7cc",
       "thumbnailUrl": "https://via.placeholder.com/150/b0f7cc"
@@ -52,6 +66,8 @@
     {
       "id": 8,
       "category": "B",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequuntur sit veniam unde distinctio sequi. Adipisci necessitatibus tenetur eius? Architecto eligendi aliquam id nisi maxime magni odit veniam sunt! Voluptatibus.",
+      "price": 1060,
       "title": "aut porro officiis laborum odit ea laudantium corporis",
       "url": "https://via.placeholder.com/600/54176f",
       "thumbnailUrl": "https://via.placeholder.com/150/54176f"
@@ -59,6 +75,8 @@
     {
       "id": 9,
       "category": "C",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed voluptates dicta nulla reprehenderit necessitatibus, expedita beatae. Neque deserunt voluptatibus aut vel quas, voluptates eligendi vero corporis blanditiis, quidem facere?",
+      "price": 1070,
       "title": "qui eius qui autem sed",
       "url": "https://via.placeholder.com/600/51aa97",
       "thumbnailUrl": "https://via.placeholder.com/150/51aa97"
@@ -66,6 +84,8 @@
     {
       "id": 10,
       "category": "A",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta minima repudiandae accusamus eaque dolorum, sit corporis temporibus dolor delectus eveniet pariatur, deleniti perferendis natus esse. A incidunt suscipit aliquid tempora?",
+      "price": 5010,
       "title": "beatae et provident et ut vel",
       "url": "https://via.placeholder.com/600/810b14",
       "thumbnailUrl": "https://via.placeholder.com/150/810b14"
@@ -73,6 +93,8 @@
     {
       "id": 11,
       "category": "B",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita at magnam possimus recusandae, voluptas commodi suscipit inventore aliquid porro accusamus incidunt sapiente laborum amet, molestias placeat natus blanditiis ea earum!",
+      "price": 1210,
       "title": "nihil at amet non hic quia qui",
       "url": "https://via.placeholder.com/600/1ee8a4",
       "thumbnailUrl": "https://via.placeholder.com/150/1ee8a4"
@@ -80,6 +102,8 @@
     {
       "id": 12,
       "category": "B",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deleniti beatae delectus enim ipsum animi quibusdam ex, obcaecati consectetur quasi, voluptatem, excepturi rem laudantium tempore doloribus libero provident voluptas praesentium?",
+      "price": 1510,
       "title": "mollitia soluta ut rerum eos aliquam consequatur perspiciatis maiores",
       "url": "https://via.placeholder.com/600/66b7d2",
       "thumbnailUrl": "https://via.placeholder.com/150/66b7d2"
@@ -87,6 +111,8 @@
     {
       "id": 13,
       "category": "A",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolor fuga modi! Quos dolorum alias at sed quam beatae sunt mollitia esse, non consectetur pariatur maiores? Dolor corrupti sapiente et?",
+      "price": 3010,
       "title": "repudiandae iusto deleniti rerum",
       "url": "https://via.placeholder.com/600/197d29",
       "thumbnailUrl": "https://via.placeholder.com/150/197d29"
@@ -94,6 +120,8 @@
     {
       "id": 14,
       "category": "C",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolores eligendi veritatis. Sint, voluptatem. Dolorum eius incidunt deleniti tempore atque hic ipsam quia ad eveniet cupiditate, enim expedita, nemo sed.",
+      "price": 4010,
       "title": "est necessitatibus architecto ut laborum",
       "url": "https://via.placeholder.com/600/61a65",
       "thumbnailUrl": "https://via.placeholder.com/150/61a65"
@@ -101,6 +129,8 @@
     {
       "id": 15,
       "category": "A",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dicta delectus saepe voluptatum suscipit consequuntur vel neque ullam, quos tempora libero. Sed deserunt ratione ducimus blanditiis ex officia illum possimus!",
+      "price": 7010,
       "title": "harum dicta similique quis dolore earum ex qui",
       "url": "https://via.placeholder.com/600/f9cee5",
       "thumbnailUrl": "https://via.placeholder.com/150/f9cee5"
@@ -108,6 +138,8 @@
     {
       "id": 16,
       "category": "A",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque labore nulla, at, quaerat similique nobis possimus, exercitationem laborum non nostrum maxime! Consequuntur id alias, recusandae veniam quibusdam enim quaerat nisi.",
+      "price": 910,
       "title": "iusto sunt nobis quasi veritatis quas expedita voluptatum deserunt",
       "url": "https://via.placeholder.com/600/fdf73e",
       "thumbnailUrl": "https://via.placeholder.com/150/fdf73e"
@@ -115,6 +147,8 @@
     {
       "id": 17,
       "category": "C",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit iste voluptate a aperiam nisi, illum eligendi pariatur perspiciatis! Libero quasi sequi ipsam voluptas deserunt magnam temporibus est dicta quos dolorum?",
+      "price": 8110,
       "title": "natus doloribus necessitatibus ipsa",
       "url": "https://via.placeholder.com/600/9c184f",
       "thumbnailUrl": "https://via.placeholder.com/150/9c184f"
@@ -122,6 +156,8 @@
     {
       "id": 18,
       "category": "A",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit labore aliquam soluta quis, cumque dolores voluptate totam enim quos incidunt facilis quo, laborum asperiores eum veniam dignissimos, perferendis excepturi unde.",
+      "price": 1090,
       "title": "laboriosam odit nam necessitatibus et illum dolores reiciendis",
       "url": "https://via.placeholder.com/600/1fe46f",
       "thumbnailUrl": "https://via.placeholder.com/150/1fe46f"
@@ -129,6 +165,8 @@
     {
       "id": 19,
       "category": "B",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aperiam eius doloribus nemo alias voluptatem. Ullam modi nobis ducimus minus natus nam sunt, in sint architecto? Magnam earum dicta laboriosam.",
+      "price": 1150,
       "title": "perferendis nesciunt eveniet et optio a",
       "url": "https://via.placeholder.com/600/56acb2",
       "thumbnailUrl": "https://via.placeholder.com/150/56acb2"
@@ -136,6 +174,8 @@
     {
       "id": 20,
       "category": "A",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aperiam doloremque sint. Cupiditate veritatis et, esse sapiente alias enim libero exercitationem aperiam sequi quo quia consequatur nostrum reiciendis error voluptates!",
+      "price": 7710,
       "title": "assumenda voluptatem laboriosam enim consequatur veniam placeat reiciendis error",
       "url": "https://via.placeholder.com/600/8985dc",
       "thumbnailUrl": "https://via.placeholder.com/150/8985dc"
@@ -143,6 +183,8 @@
     {
       "id": 21,
       "category": "C",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias assumenda nihil officia dolorum nobis provident fuga quia iste deserunt, consequuntur ratione nemo! Aut sapiente quisquam dignissimos, labore distinctio neque vel!",
+      "price": 1200,
       "title": "ad et natus qui",
       "url": "https://via.placeholder.com/600/5e12c6",
       "thumbnailUrl": "https://via.placeholder.com/150/5e12c6"
@@ -150,6 +192,8 @@
     {
       "id": 22,
       "category": "A",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum ipsam enim, aspernatur nulla quasi minus fugit repellat tempora libero autem vero laudantium sequi, commodi quia suscipit totam quis. Rem, blanditiis.",
+      "price": 1780,
       "title": "et ea illo et sit voluptas animi blanditiis porro",
       "url": "https://via.placeholder.com/600/45601a",
       "thumbnailUrl": "https://via.placeholder.com/150/45601a"
@@ -157,6 +201,8 @@
     {
       "id": 23,
       "category": "A",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur quibusdam in veniam molestiae aut laudantium odit magnam! Quo, ratione dignissimos illum explicabo sed voluptatum eius at reprehenderit nulla optio.",
+      "price": 1560,
       "title": "harum velit vero totam",
       "url": "https://via.placeholder.com/600/e924e6",
       "thumbnailUrl": "https://via.placeholder.com/150/e924e6"
@@ -164,6 +210,8 @@
     {
       "id": 24,
       "category": "B",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam ex similique quod optio est, ut odit itaque quis, facilis officiis quas totam blanditiis, placeat eius adipisci. Nisi alias tempora minus.",
+      "price": 1890,
       "title": "beatae officiis ut aut",
       "url": "https://via.placeholder.com/600/8f209a",
       "thumbnailUrl": "https://via.placeholder.com/150/8f209a"
@@ -171,6 +219,8 @@
     {
       "id": 25,
       "category": "A",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maiores quas earum impedit placeat tempore, quidem quae eos similique sapiente iure, facere eius autem, quisquam dignissimos voluptate nam atque. Sint!",
+      "price": 9040,
       "title": "facere non quis fuga fugit vitae",
       "url": "https://via.placeholder.com/600/5e3a73",
       "thumbnailUrl": "https://via.placeholder.com/150/5e3a73"
