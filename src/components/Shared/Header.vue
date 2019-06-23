@@ -32,6 +32,14 @@
           </router-link>
         </li>
       </ul>
+      <ul class="navbar-nav mr-5">
+        <li class="nav-item">
+          <router-link 
+            class="nav-link"
+            to="/Shopcart">Корзина
+          </router-link>
+        </li>
+      </ul>
     </div>
   </nav>
 </template>

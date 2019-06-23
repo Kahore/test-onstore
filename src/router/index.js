@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Main from '@/components/Main';
 import GoodsDetails from '@/components/GoodsDetails';
 import ShopMap from '@/components/Map';
+import Shopcart from '@/components/Shopcart';
 
 Vue.use( Router );
 
@@ -23,6 +24,11 @@ export default new Router( {
       path: '/ShopMap/',
       name: 'ShopMap',
       component: ShopMap,
+    },
+    {
+      path: '/Shopcart/',
+      name: 'Shopcart',
+      component: Shopcart,
     },
   ],
 } );
