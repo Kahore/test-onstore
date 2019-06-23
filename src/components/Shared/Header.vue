@@ -39,7 +39,7 @@
             to="/Shopcart">
             <i class="fa fa-shopping-cart"/>
             Корзина ({{ QuantityInShopcart }})
-            на сумму {{ TotalCost }}
+            на сумму {{ totalCost }}
             <i
               class="fa fa-rub"
               aria-hidden="true"/>
@@ -51,19 +51,35 @@
 </template>
 
 <script>
+import EventBus from '../../EventBus'
   export default {
     name: 'PageHeader',
+    data () {
+      return {
+        totalCost: 0
+      }
+    },
     computed:{
       QuantityInShopcart () {
         return this.$store.getters.GET_SHOPCART_QUANTITY;
       },
-      TotalCost () {
+    },
+    created () {
+       this.TotalCost();
+    },
+    mounted() {
+      EventBus.$on( 'change_quantity', () => {
+        this.TotalCost();
+      } );
+    },
+    methods: {
+      TotalCost() {
         let shopcartData = this.$store.getters.GET_SHOPCART;
-        let totalCost = 0;
+        let _totalCost = 0;
         for (let index = 0; index < shopcartData.length; index++) {
-          totalCost = totalCost + shopcartData[index].calculatedPrice;
+          _totalCost = _totalCost + shopcartData[index].calculatedPrice;
         }
-        return totalCost
+        this.totalCost = _totalCost;
       }
     }
   };

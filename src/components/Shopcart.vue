@@ -25,9 +25,20 @@
               <button class="btn" @click="deleteFromShopcart(item.id)">
                 <i class="fa fa-trash" aria-hidden="true"></i>
               </button>
+
+            </div>
+            <div class="pull-left quantity offset-lg-11">
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Quantity"
+                v-model= "item.quantity"
+                @click = "updateQuantity(item)"
+                min="1">
             </div>
         </div>
       </div>
+      
       <div class="ml-2 col-md-3">
         <form action="" method="post" >
           <div class="form-group">
@@ -53,7 +64,7 @@
 </template>
 
 <script>
-
+import EventBus from '../EventBus'
 export default {
   name: 'Shopcart',
   computed: {
@@ -64,6 +75,14 @@ export default {
   methods: {
     deleteFromShopcart( itemID ) {
        this.$store.dispatch( 'MUTATE_SHOPCART_ITEM_DELETE', itemID );
+       EventBus.$emit ( 'change_quantity' );
+    },
+    updateQuantity ( item ) {
+      // Anyway, in real app price shoul be return from server 
+      const calcPrice = item.price * item.quantity;
+      let data = Object.assign( {}, item, { quantity: item.quantity, calculatedPrice: calcPrice } );
+      this.$store.dispatch( 'MUTATE_SHOPCART_ITEM_QUANTITY', data );
+      EventBus.$emit ( 'change_quantity' );
     }
   }
 };

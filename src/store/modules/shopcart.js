@@ -61,7 +61,14 @@ const mutations = {
     } );
     state.shopcart.splice( index, 1 );
   },
+  MUTATE_SHOPCART_ITEM_QUANTITY: ( state, payload ) => {
+    let index = state.shopcart.findIndex( function( block ) {
+      return block.id === payload.id;
+    } );
+    state.shopcart[index] = JSON.parse( JSON.stringify( payload ) );
+  }
 };
+
 
 const actions = {
   LOAD_SHOPCART( { commit } ) {
@@ -77,6 +84,9 @@ const actions = {
   },
   MUTATE_SHOPCART_ITEM_DELETE( { commit }, payload ) {
     commit( 'MUTATE_SHOPCART_ITEM_DELETE', payload );
+  },
+  MUTATE_SHOPCART_ITEM_QUANTITY( { commit }, payload ) {
+    commit( 'MUTATE_SHOPCART_ITEM_QUANTITY', payload );
   },
 };
 
